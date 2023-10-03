@@ -5,9 +5,9 @@
     text-align: center;
     background-color: rgb(101, 78, 163);
     flex-direction: row ;
-    width: 811px;
-    height: 473px;
-    padding: 30px;
+    width: 330px;
+    height: 25px;
+    padding: 10px;
     
 }
 .li:hover{
