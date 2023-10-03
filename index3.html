@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="link/style.css" rel="stylesheet" type="text/css" />
+    <title>Inflation</title>
+</head>
+<body class="body">
+    <header>
+        <div class="wrap"><img class="head" src="https://www.eximb.com/assets/images/post/valutadeposit-1110.jpg"></div>
+    </header>
+    <nav>
+        <ul>
+            <li class="li"><a class="a" href=index.html>Головна</a></li>
+            <li class="li"><a class="a" href=index2.html>Інфляція</a></li>
+            <li class="li"><a class="a" href=index3.html>Калькулятор</a></li>
+        </ul>
+    </nav>
+    <main>
+    <article class="right">
+        <div>
+        <h5>Введіть початкову суму вкладу.</h5>
+         <input type="text" id = "input_a">
+         <h5>Введіть річну процентну ставку (виду 10%=10).</h5>
+         <input type="text" id = "input_b">
+         <h5>Оберіть термін вкладу в роках.</h5>
+         <select name="" id="act">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <h5>Сума грошей наприкінці терміну.</h5>
+         <input type="text" id = "input_d">
+         <button id = "btn">Розрахувати</button>
+    </div>
+    <script>
+        function fnc(){
+            let a = parseInt(input_a.value);
+            let b = parseInt(input_b.value);
+            var el=document.getElementById('act');
+        console.log(el.value);
+            var d;
+            if (el.value ==1){d = a*(1+b*1/100);}
+            if (el.value ==2){d = a*(1+b*2/100);}
+            if (el.value ==3){d = a*(1+b*3/100);}
+            if (el.value ==4){d = a*(1+b*4/100);}
+            input_d.value = d;
+            console.log(d);
+        }
+        btn.addEventListener("click",fnc);
+    </script>
+    </article>
+    </main>
+    <footer>Всі права захищені</footer>
+</body>
+</html>
