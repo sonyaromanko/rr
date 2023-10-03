@@ -3,18 +3,18 @@
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    background-color: rgb(175, 101, 78);
+    background-color: rgb(101, 78, 163);
     flex-direction: row ;
-    width: 330px;
-    height: 25px;
-    padding: 10px;
+    width: 811px;
+    height: 473px;
+    padding: 30px;
     
 }
 .li:hover{
-   background-color: brown;
+   background-color: green;
 }
 .body{
-    background-color: rgb(241, 232, 221);
+    background-color: rgb(101, 78, 163);
 }
 .a{
     color: aliceblue;
@@ -33,7 +33,7 @@
 }
 .left{
     width: 20%;
-    background-color: rgb(245, 241, 234);
+    background-color: rgb(101, 78, 163);
     text-align: justify;
     padding: 15px;
     font-size: 18px;
@@ -48,7 +48,7 @@ main{
 .right{
     width:79%;
     padding: 15px;
-    background-color: rgb(235, 226, 215);
+    background-color: rgb(	101, 78, 163);
 }
 .head{
     height: 120px;
